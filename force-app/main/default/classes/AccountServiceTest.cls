@@ -3,7 +3,7 @@ private class AccountServiceTest {
   @IsTest
   static void should_create_account() {
     String acctName = 'Salesforce';
-    String acctNumber = 'SFDC';
+    String acctNumber = '0001';
     String tickerSymbol = 'CRM';
     Test.startTest();
       AccountService service = new AccountService();

@@ -11,6 +11,6 @@ node {
                 bat "${toolbelt}/sf org login sfdx-url --sfdx-url-file ${authFile}"
                 bat "${toolbelt}/sf project deploy start --target-org artem.tustov@wise-panda-qh200a.com"
             }
-        }
+        //}
     }
 }

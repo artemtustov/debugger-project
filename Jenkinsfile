@@ -4,6 +4,10 @@ import groovy.json.JsonSlurperClassic
 
 node {
     def toolbelt = tool 'toolbelt'
+
+    stage('Pool project') {
+        git changelog: false, url: 'https://github.com/artemtustov/debugger-project.git'
+    }
     
     stage('Deploy to org'){
         //dir('D:\\atustov\\projects\\salesforce\\debugger-project') {
